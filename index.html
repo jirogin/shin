@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css読み込み-->
+  <link rel="stylesheet" href="shinsaibashisite.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="css_browser_selector.js" type="text/javascript"> </script>
+  <!--js読み込み-->
+  <script src="shinsaibashisite.js"></script>
+  <title>心斎橋キャンフェスサイト(仮)</title>
+</head>
+
+<body>
+  <div class="start">
+    <p><img src="./image/fadein1.png" alt=""></p>
+  </div>
+
+  <!--header-->
+  <header class="header">
+    <ul class="header-menu">
+      <li><a href="#s_02_1">コンセプト</a></li>
+      <li><a href="#s_02_2">タイムスケジュール</a></li>
+      <li><a href="#s_02_3">ブース一覧</a></li>
+      <li><a href="#s_02_4">N展</a></li>
+    </ul>
+  </header>
+
+  <!--sec-1-->
+  <section class="section1-1">
+    <div class="container">
+      <img src="./image/camfes5.png" alt="" id="view">
+      <img src="./image/shinsaibashi.gif" alt="gif" id="gif">
+    </div>
+  </section>
+
+  <section class="section1-2">
+    <div class="container"></div>
+  </section>
+
+  <!--sec-2-->
+  <section class="section2-1" id="s_02_1">
+    <div class="container">
+      <div class="concept">
+        <p class="campusconcept">心斎橋キャンパスコンセプト</p>
+        <img src="./image/nearyou.png" alt="" width="50%" class="nearyou">
+        <p><span class="setumei-2">オンラインでも、あなたの近くに。</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2-2">
+    <div class="container"></div>
+  </section> 
+
+  <!--sec-3-->
+  <section class="section3-1" id="s_02_2">
+    <div class="container">
+      <h1>タイムスケジュール</h1>
+      <h2>ブースごとの概要もこちらで確認！</h2>
+    </div>
+  </section>
+
+  <section class="section3-2">
+    <div class="scrollbox fixed container js-modal-open" data-target="Timemodal">
+      <img src="./image/camfesTimeschedule.png" alt="Timeschedule">
+    </div>
+  </section>
+
+  <section class="section3-3">
+    <p>PDFはこちら！</p>
+    <iframe src="https://drive.google.com/file/d/1QbzpT4Ue2v3d1x_e52WNbOnfCvpL3k8u/preview" frameborder="0"></iframe>
+  </section>
+
+  <section class="section3-4">
+    <div class="container"></div>
+  </section>
+
+  <section class="section3-5" id="s_02_3">
+    <div class="container">
+      <h1>ブース一覧</h1>
+      <h2>クリックで各ブースのZoomに移動できます！</h2>
+    </div>
+  </section>
+
+  <!--sec-4-->
+  <section class="section4-1">
+    <div class="parallax-bg fixed container">
+      <div class="oneArea">
+        <img src="./image/camfesmainbooth.png" alt="mainbooth">
+      </div>
+
+      <div class="oneArea">
+        <img src="./image/camfesgamebooth.png" alt="gamebooth">
+      </div>
+
+      <div class="oneArea">
+        <img src="./image/camfesentbooth.png" alt="entbooth">
+      </div>
+
+      <div class="oneArea">
+        <img src="./image/camfesradiobooth.png" alt="radiobooth">
+      </div>
+
+      <div class="oneArea">
+        <img src="./image/camfesonebooth.png" alt="onebooth">
+      </div>
+    </div>
+  </section> 
+
+  <section class="section4-2" id="s_02_4">
+    <div class="container">
+      <h1>N展</h1></br>
+      <h2>クリックで拡大し、作品の説明がでます！</h2>
+    </div>
+  </section>
+
+  <!--sec-5-->
+  <section class="section5">
+    <div class="parallax-bg fixed container">
+      <div class="oneArea Area1 js-modal-open" data-target="modal01">
+        <img src="./Nten/N展_どめいち.png" alt="" id="Nten1">
+        <p>作成者: どめいち さん</p>
+      </div>
+
+      <div class="oneArea Area2 js-modal-open" data-target="modal02">
+        <img src="./Nten/N展_さいとうちゃん.png" alt="" id="Nten2">
+        <p>作成者: さいとうちゃん さん</p>
+      </div>
+
+      <div class="oneArea Area3 js-modal-open" data-target="modal03">
+        <img src="./Nten/N展_さめちゃん.png" alt="" id="Nten3">
+        <p>作成者: さめちゃん さん</p>
+      </div>
+
+      <div class="oneArea Area4 js-modal-open" data-target="modal04">
+        <img src="./Nten/N展_側溝の苔.png" alt="" id="Nten4">
+        <p>作成者: 側溝の苔 さん</p>
+      </div>
+
+      <div class="oneArea Area5 js-modal-open" data-target="modal05">
+        <img src="./Nten/N展_吉村裕弥.png" alt="" id="Nten5">
+        <p>作成者: 吉村裕弥 さん</p>
+      </div>
+
+      <div class="oneArea Area6 js-modal-open" data-target="modal06">
+        <img src="./Nten/N展_山崎一生1.png" alt="" id="Nten6">
+        <p>作成者: 山崎一生 さん</p>
+      </div>
+
+      <div class="oneArea Area7 js-modal-open" data-target="modal07">
+        <img src="./Nten/N展_ターニャ1.jpeg" alt="" id="Nten7">
+        <p>作成者: ターニャ さん</p>
+      </div>
+
+      <div class="oneArea Area8 js-modal-open" data-target="modal08">
+        <img src="./Nten/N展_ターニャ2.jpeg" alt="" id="Nten8">
+        <p>作成者: ターニャ さん</p>
+      </div>
+
+      <div class="oneArea Area9 js-modal-open" data-target="modal09">
+        <img src="./Nten/N展_ターニャ3.jpeg" alt="" id="Nten9">
+        <p>作成者: ターニャ さん</p>
+      </div>
+
+      <div class="oneArea Area10 js-modal-open" data-target="modal10">
+        <img src="./Nten/N展_トメィトゥ1.png" alt="" id="Nten10">
+        <p>作成者: トメィトウ さん</p>
+      </div>
+
+      <div class="oneArea Area11 js-modal-open" data-target="modal11">
+        <img src="./Nten/N展_トメィトゥ2.png" alt="" id="Nten11">
+        <p>作成者: トメィトウ さん</p>
+      </div>
+
+      <div class="oneArea Area12 js-modal-open" data-target="modal12">
+        <img src="./Nten/N展_トメィトゥ3.png" alt="" id="Nten12">
+        <p>作成者: トメィトウ さん</p>
+      </div>
+
+      <div class="oneArea Area13 js-modal-open" data-target="modal13">
+        <img src="./Nten/N展_くらげ1.jpg" alt="" id="Nten13">
+        <p>作成者: くらげ さん</p>
+      </div>
+
+      <div class="oneArea Area14 js-modal-open" data-target="modal14">
+        <img src="./Nten/N展_くらげ2.jpg" alt="" id="Nten14">
+        <p>作成者: くらげ さん</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- モーダルエリアここから -->
+  <section id="modal01" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_どめいち.png" alt="" width="80%">
+        <p>Tinkercadで作った太鼓の達人の筐体です。</br>- どめいち さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal02" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_さいとうちゃん.png" alt="" width="80%">
+        <p>愛犬のポンタの写真をフォトショで加工、デザインして、世界に一つだけのオリジナルTシャツを作りました。</br>- さいとうちゃん さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal03" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_さめちゃん.png" alt="" width="80%" class="modal3img">
+        <p>今まで自分が撮った写真をまとめたものです。</br>- さめちゃん さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal04" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_側溝の苔.png" alt="" width="80%">
+        <p>人類の敗北</br>- 側溝の苔 さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal05" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_吉村裕弥.png" alt="" width="80%">
+        <p>https://nichcopyter.herokuapp.com/ インターネット掲示板で発生した</br>面白いやりとりを、ユーザーが共有するSNS。</br>- 吉村裕弥 さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal06" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_山崎一生1.png" alt="" width="80%">
+        <p>プログラミングの時間にHTMLで作った自分の自己紹介ページです。個人情報などは隠してますが初めてにしてはうまくできたかと思います！</br>- 山崎一生 さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal07" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_ターニャ1.jpeg" alt="" width="80%">
+        <p>ただ自分が褐色のキャラが好きだったので描いた作品です。</br>- ターニャ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal08" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_ターニャ2.jpeg" alt="" width="80%">
+        <p>暗い感じの中に明るい色をとイメージして描いてみたイラストです。</br>- ターニャ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal09" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_ターニャ3.jpeg" alt="" width="80%">
+        <p>友達のアイコン用に描いたイラストです、案外これが1番いい感じに描けたと思えるイラストです。</br>- ターニャ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal10" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_トメィトゥ1.png" alt="" width="80%">
+        <p>ぴえん</br>- トメィトウ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal11" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_トメィトゥ2.png" alt="" width="80%">
+        <p>魔剤自販機</br>- トメィトウ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal12" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_トメィトゥ3.png" alt="" width="80%">
+        <p>あれだよあれ、Fall Guysのあれ</br>- トメイトウ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal13" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_くらげ1.jpg" alt="" width="80%">
+        <p>Nという文字をモチーフにしたロゴです。</br>- くらげ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="modal14" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./Nten/N展_くらげ2.jpg" alt="" width="80%">
+        <p>アイコン用に作ったものです。</br>- くらげ さん</p>
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <section id="Timemodal" class="modalArea">
+    <div id="modalBg" class="modalBg"></div>
+    <div class="modalWrapper">
+      <div class="modalContents">
+        <img src="./image/camfesTimeschedule.png" alt="" width="80%">
+      </div>
+      <div id="closeModal" class="closeModal">×</div>
+    </div>
+  </section>
+
+  <!-- モーダルエリアここまで -->
+
+
+  <!--topへ戻るボタン-->
+    <!--cssと連携-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+
+    <!--id page_topを設定 ボタンに表示する文字列 PAGE TOP を設定-->
+    <p id="page_top"><a href="#wrap">TOP</a></p>
+
+
+</body>
+
+</html>

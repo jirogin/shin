@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  html, body{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 1440px;
+    max-height: 100vh;
+    padding: 0;
+    text-align: center;
+    font-family: 'Tsukushi A Round Gothic'; font-weight: normal;;
+    position: relative;
+    background-size: cover;
+  }
+
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 2px;
+    object-fit: cover;
+  }
+
+  hr{
+    color: grey;
+    margin: auto;
+    width: 100%;
+  }
+  
+  section{
+    width: 100%;
+  }
+
+  /*固定する背景*/
+  .fixed{
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 5%;
+  }
+
+  .parallax-bg {
+    background: #FFF;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /*スクロールするコンテンツ*/
+  .scrollbox {
+    background-color: #CC6D29;
+    height: 100vh;
+  }
+
+  /*start*/
+  .start {
+    background: #CC6D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9000;
+  }
+
+  .start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+  }
+
+  .start img{
+    height: 102vh;
+    width: 100vw;
+  }
+
+  /*header*/
+  header{
+    z-index: 10;
+    height: 100px;
+    position: fixed;
+    background-color: none;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    background: linear-gradient(#cc6d29, rgba(255,255,255,0));
+  }
+
+  .header-menu{
+    overflow:hidden;
+    list-style:none;
+    margin: 0 auto;
+    z-index: 20;
+  }
+  
+  .header-menu li{
+    display: inline-block;
+    padding: 26px 10px 20px 10px;
+  }
+
+  .header-menu a{
+    font-size: 20px;
+    color: #707070;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid #b2b2b2;
+    padding-bottom: 2px;
+    text-shadow: 1px 2px 2px #f4f5f7;
+    z-index: 500;
+  }
+
+  .header-menu a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    transform: scaleX(0);
+    transform-origin: right top;
+    transition: transform 0.3s;
+  }
+
+  .header-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+
+  /*oneArea*/
+  .oneArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    background: #333;
+    box-shadow: 0 2px 10px #cc6d29;
+    position: relative;
+    margin: 40px 40px;
+    border-radius: 9%;
+    border: solid 2px #707070;
+  }
+  
+  .oneArea:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 30px #cc6d29;
+  }
+  
+  .oneArea .oneBox {
+    width: 45%;
+    margin-right: 1%;
+    border: 3px solid #111;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .oneArea p{
+    padding-top: 15px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .oneArea img{
+    width: 50%;
+  }
+
+  /*sec-1*/
+  .section1-1{
+    position: relative;
+  }
+
+  .section1-1 .container{
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  #view{
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    width: 70%;
+    z-index: 30;
+  }
+
+  #gif{
+    position: absolute; /*　変更*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+  }
+
+  .sc-1-text{
+    font-size: 20px;
+  }
+
+  .section1-2 .container{
+    height: 100px;
+  }
+
+  /*sec-2*/
+  .section2-1{
+    position: relative;
+  }
+
+  .section2-1 .container{
+    height: 100vh;
+  }
+
+  .concept{
+    top: 200px;
+  }
+
+  .campusconcept, .setumei-1, .setumei-2{
+    font-size: 30px;
+  }
+
+  /*sec-2-2*/
+  .section2-2 .container{
+    height: 100px;
+    background: linear-gradient(#FFF, #cc6d29);
+  }
+
+  /*sec-3*/
+  .section3-1 .container{
+    background-color: #cc6d29;
+    height: 150px;
+    padding-top: 20px;
+  }
+
+  .section3-1 h1{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .section3-1 h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .section3-2 .container{
+    height: auto;
+  }
+
+  .section3-2 img{
+    width: 60vw;
+  }
+
+  .section3-3{
+    height: 250px;
+    background-color: #cc6d29;
+  }
+
+  .section3-3 p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  /*sec-3-4*/
+  .section3-4 .container{
+    height: 100px;
+    background: linear-gradient(#cc6d29, #fff);
+  }
+
+  /*sec-3-5*/
+  .section3-5{
+    position: relative;
+  }
+
+  .section3-5 .container{
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  .section3-5 h1{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 40px;
+    font-weight: 600;
+    top: 5vh;
+  }
+
+  .section3-5 h2{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    top: 5vh;
+  }
+
+  /*sec-4*/
+  .section4-1{
+    position: relative;
+  }
+
+  .section4-1 .container{
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section4-1 .oneArea{
+    background-color: #fff;
+  }
+
+  .section4-1 .oneArea img{
+    width: 90%;
+  }
+
+  /*sec-4-2*/
+  .section4-2{
+    position: relative;
+  }
+
+  .section4-2 .container{
+    height: 150px;
+    padding-top: 20px;
+  }
+
+  .section4-2 h1{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .section4-2 h2{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /*sec-5*/
+  .section5{
+    position: relative;
+  }
+
+  .section5 .container{
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section5 img{
+    width: 60%;
+    height: 60%;
+  }
+
+  .section5 p{
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  #Nten7, #Nten8, #Nten9{
+    width: 40%;
+  }
+
+  /*top-button*/
+  #page_top {
+    position: fixed;
+    bottom: 55px;
+    left: 30px;
+    font-size: 77%;
+    z-index: 1;
+  }
+  #page_top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 70px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  #page_top a:hover {
+    text-decoration: none;
+    background: #cc6d29;
+    z-index: 3;
+  }
+
+  /* モーダルCSS */
+  .modalArea {
+    display: none;
+    position: fixed;
+    z-index: 100; /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+  }
+
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 70%;
+    max-width: 700px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2%;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .modalContents img{
+    width: 450px;
+  }
+
+  .modalContents .modal3img{
+    width: 400px;
+  }
+
+
+  /*safari対応ここから*/
+
+  _::-webkit-full-page-media, _:future, :root .section5 .oneArea img {
+    height: 60%;
+  }
+
+  _::-webkit-full-page-media, _:future, :root .section4-1 .oneArea img {
+      height: 23%;
+  top: 38%;
+  }
+
+  /*safari対応ここまで*/
+}
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  html, body{
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 1440px;
+    max-height: 100vh;
+    padding: 0;
+    text-align: center;
+    font-family: 'Tsukushi A Round Gothic'; font-weight: normal;;
+    position: relative;
+    background-size: cover;
+  }
+
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    letter-spacing: 2px;
+    object-fit: cover;
+  }
+
+  hr{
+    color: grey;
+    margin: auto;
+    width: 100%;
+  }
+  
+  section{
+    width: 100%;
+  }
+
+  /*固定する背景*/
+  .fixed{
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 5%;
+  }
+
+  .parallax-bg {
+    background: #FFF;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /*スクロールするコンテンツ*/
+  .scrollbox {
+    background-color: #CC6D29;
+    height: 100vh;
+  }
+
+  /*start*/
+  .start {
+    background: #CC6D29;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9000;
+  }
+
+  .start p {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 9999;
+  }
+
+  .start img{
+    width: 100vw;
+  }
+
+  /*header*/
+  header{
+    z-index: 10;
+    height: 100px;
+    position: fixed;
+    background-color: none;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    background: linear-gradient(#cc6d29, rgba(255,255,255,0));
+  }
+
+  .header-menu{
+    overflow:hidden;
+    list-style:none;
+    margin: 0 auto;
+    z-index: 20;
+  }
+  
+  .header-menu li{
+    display: inline-block;
+    padding: 26px 10px 20px 10px;
+  }
+
+  .header-menu a{
+    font-size: 14px;
+    color: #707070;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid #b2b2b2;
+    padding-bottom: 2px;
+    text-shadow: 1px 2px 2px #f4f5f7;
+  }
+
+  .header-menu a::after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #ddd;
+    transform: scaleX(0);
+    transform-origin: right top;
+    transition: transform 0.3s;
+  }
+
+  .header-menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left top;
+  }
+
+  /*oneArea*/
+  .oneArea {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+    background: #333;
+    box-shadow: 0 2px 10px #cc6d29;
+    position: relative;
+    margin: 15px 15px;
+    border-radius: 9%;
+    border: solid 2px #707070;
+  }
+  
+  .oneArea:hover{
+    cursor: pointer;
+    box-shadow: 0 2px 30px #cc6d29;
+  }
+  
+  .oneArea .oneBox {
+    width: 45%;
+    margin-right: 1%;
+    border: 3px solid #111;
+    background: #fff;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .oneArea img{
+    width: 60%;
+  }
+
+  /*sec-1*/
+  .section1-1{
+    position: relative;
+  }
+
+  .section1-1 .container{
+    height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+  }
+
+  #view{
+    left: 50%;
+    top: 50%;
+    transform: translate(-70%, -50%);
+    width: 70%;
+    z-index: 30;
+  }
+
+  #gif{
+    position: absolute; /*　変更*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+  }
+
+  .sc-1-text{
+    font-size: 20px;
+  }
+
+  .section1-2 .container{
+    height: 100px;
+  }
+
+  /*sec-2*/
+  .section2-1{
+    position: relative;
+  }
+
+  .section2-1 .container{
+    height: 100vh;
+  }
+
+  .concept{
+    top: 100px;
+  }
+
+  .campusconcept, .setumei-1, .setumei-2{
+    font-size: 20px;
+  }
+
+  /*sec-2-2*/
+  .section2-2 .container{
+    height: 100px;
+    background: linear-gradient(#FFF, #cc6d29);
+  }
+
+  /*sec-3*/
+  .section3-1 .container{
+    background-color: #cc6d29;
+    height: 100px;
+    padding-top: 20px;
+  }
+
+  .section3-1 h1{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .section3-1 h2{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .section3-2 .container{
+    height: auto;
+  }
+
+  .section3-2 img{
+    width: 60vw;
+  }
+
+  .section3-3{
+    height: 250px;
+    background-color: #cc6d29;
+  }
+
+  .section3-3 p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  /*sec-3-4*/
+  .section3-4 .container{
+    height: 100px;
+    background: linear-gradient(#cc6d29, #fff);
+  }
+
+  /*sec-3-5*/
+  .section3-5{
+    position: relative;
+  }
+
+  .section3-5 .container{
+    height: 200px;
+    padding-top: 20px;
+  }
+
+  .section3-5 h1{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    top: 5vh;
+  }
+
+  .section3-5 h2{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    top: 5vh;
+  }
+
+  /*sec-4*/
+  .section4-1{
+    position: relative;
+  }
+
+  .section4-1 .container{
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section4-1 .oneArea{
+    background-color: #fff;
+  }
+
+  .section4-1 .oneArea img{
+    width: 90%;
+  }
+
+  /*sec-4.5*/
+  .section4-2{
+    position: relative;
+  }
+
+  .section4-2 .container{
+    height: 150px;
+    padding-top: 20px;
+  }
+
+  .section4-2 h1{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .section4-2 h2{
+    color: #cc6d29;
+    text-shadow: 1px 2px 2px #FFF;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+
+  /*sec-5*/
+  .section5{
+    position: relative;
+  }
+
+  .section5 .container{
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .section5 img{
+    width: 60%;
+    height: 60%;
+  }
+
+  .section5 p{
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  #Nten7, #Nten8, #Nten9{
+    width: 40%;
+  }
+
+  /*top-button*/
+  #page_top {
+    position: fixed;
+    bottom: 55px;
+    left: 10px;
+    font-size: 77%;
+    z-index: 1;
+  }
+  #page_top a {
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 50px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+  }
+  #page_top a:hover {
+    text-decoration: none;
+    background: #cc6d29;
+    z-index: 3;
+  }
+
+  /* モーダルCSS */
+  .modalArea {
+    display: none;
+    position: fixed;
+    z-index: 100; /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30,30,30,0.9);
+  }
+
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 70%;
+    max-width: 450px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2%;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .modalContents img{
+    width: 80%;
+  }
+
+
+  /*safari・iphone対応ここから*/
+
+  _::-webkit-full-page-media, _:future, :root .section5 .oneArea img {
+    height: 60%;
+  }
+
+  _::-webkit-full-page-media, _:future, :root .section4-1 .oneArea img {
+    height: 23%;
+    top: 37%;
+  }
+
+  .iphone body {
+    font-family: sans-serif ;
+  }
+
+  .iphone .section4-1 .oneArea img{
+    top: 0;
+  }
+
+  .iphone .oneArea p{
+    display: none;
+  }
+
+  .iphone .header-menu a{
+    font-size: 12px;
+    font-weight: 600;
+    color: #909090;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 2px solid #b2b2b2;
+    padding-bottom: 2px;
+    text-shadow: 1px 2px 2px #f4f5f7;
+  }
+
+  .iphone .header-menu li{
+    display: inline-block;
+    padding: 26px 3px 20px 3px;
+  }
+
+  .iphone #Timemodal .modalWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2%;
+  }
+
+  .iphone #Timemodal .modalContents img{
+    width: 90%;
+  }
+
+  /*safari・iphone対応ここまで*/
+}
