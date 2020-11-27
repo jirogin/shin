@@ -268,7 +268,7 @@
   }
 
   .section3-3{
-    height: 250px;
+    height: 100px;
     background-color: #cc6d29;
   }
 
@@ -277,6 +277,21 @@
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 10px;
+  }
+
+  .section3-3 .schDl{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .section3-3 .schDl:hover{
+    color: #f4f5f7;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px 2px #FFF;
   }
 
   /*sec-3-4*/
@@ -728,7 +743,7 @@
   }
 
   .section3-3{
-    height: 250px;
+    height: 100px;
     background-color: #cc6d29;
   }
 
@@ -737,6 +752,21 @@
     font-size: 20px;
     font-weight: 600;
     padding-bottom: 10px;
+  }
+
+  .section3-3 .schDl{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+
+  .section3-3 .schDl:hover{
+    color: #f4f5f7;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    text-shadow: 1px 2px 2px #FFF;
   }
 
   /*sec-3-4*/
