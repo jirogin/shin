@@ -326,7 +326,7 @@
     top: 5vh;
   }
 
-  /*sec-4*/
+  /*sec-4-1*/
   .section4-1{
     position: relative;
   }
@@ -341,10 +341,22 @@
 
   .section4-1 .oneArea{
     background-color: #fff;
+    position: relative;
+    z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
   }
 
   .section4-1 .oneArea img{
     width: 90%;
+  }
+
+  .section4-1 .oneArea a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
   }
 
   /*sec-4-2*/
@@ -466,6 +478,25 @@
 
   .modalContents .modal3img{
     width: 400px;
+  }
+
+  #Timemodal .modalWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    max-width: 750px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2%;
+  }
+
+  #Timemodal .modalContents img{
+    width: 90%;
+    height: 90%;
   }
 
 
@@ -801,7 +832,7 @@
     top: 5vh;
   }
 
-  /*sec-4*/
+  /*sec-4-1*/
   .section4-1{
     position: relative;
   }
@@ -816,10 +847,22 @@
 
   .section4-1 .oneArea{
     background-color: #fff;
+    position: relative;
+    z-index: 1; /* 必要であればリンク要素の重なりのベース順序指定 */
   }
 
   .section4-1 .oneArea img{
     width: 90%;
+  }
+
+  .section4-1 .oneArea a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
   }
 
   /*sec-4.5*/
@@ -940,6 +983,24 @@
     width: 80%;
   }
 
+  #Timemodal .modalWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+    max-width: 750px;
+    padding: 10px 30px;
+    background-color: #333;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 2%;
+  }
+
+  #Timemodal .modalContents img{
+    width: 90%;
+    height: 90%;
+  }
 
   /*safari・iphone対応ここから*/
 
